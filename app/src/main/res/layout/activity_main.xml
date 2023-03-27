@@ -6,13 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/message_outline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+
+        android:src="@drawable/ic_message_outline"
+
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/message_result"
+        android:layout_width="216dp"
+        android:layout_height="131dp"
+
+        android:text="I hear you"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+
+        app:layout_constraintBottom_toBottomOf="@id/message_outline"
+        app:layout_constraintEnd_toEndOf="@id/message_outline"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@id/message_outline"
+        app:layout_constraintTop_toTopOf="@id/message_outline"
+        app:layout_constraintVertical_bias="0.349" />
+
+    <ImageView
+        android:id="@+id/ring_background"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+
+        android:src="@drawable/record_background"
+
+        android:layout_marginBottom="30dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+
+        android:src="@drawable/ic_mic"
+
+        app:layout_constraintStart_toStartOf="@id/ring_background"
+        app:layout_constraintEnd_toEndOf="@id/ring_background"
+        app:layout_constraintBottom_toBottomOf="@id/ring_background"
+        app:layout_constraintTop_toTopOf="@id/ring_background"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
