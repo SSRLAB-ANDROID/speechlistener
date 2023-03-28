@@ -22,7 +22,7 @@
         android:layout_width="216dp"
         android:layout_height="131dp"
 
-        android:text="I hear you"
+        android:text="Listening..."
         android:textColor="@color/black"
         android:textSize="24sp"
 
